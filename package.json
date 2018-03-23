@@ -1,0 +1,23 @@
+{
+  "name": "taralians-language-translator",
+  "version": "0.0.0",
+  "description": "A fictional \"The Taralians Language\" translator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjirou/taralians-language-translator.git"
+  },
+  "keywords": [
+    "game",
+    "joke"
+  ],
+  "author": "kjirou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kjirou/taralians-language-translator/issues"
+  },
+  "homepage": "https://github.com/kjirou/taralians-language-translator#readme"
+}
