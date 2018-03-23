@@ -1,6 +1,6 @@
 # taralians-language-translator
 
-A fictional "The Taralians Language" translator
+A fictional "The Taralians Language"(タラール語) translator
 
 
 ## これは何？

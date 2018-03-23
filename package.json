@@ -1,7 +1,7 @@
 {
   "name": "taralians-language-translator",
   "version": "0.0.0",
-  "description": "A fictional \"The Taralians Language\" translator",
+  "description": "A fictional \"The Taralians Language\"(タラール語) translator",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
