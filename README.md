@@ -1,5 +1,8 @@
 # taralians-language-translator
 
+[![npm version](https://badge.fury.io/js/taralians-language-translator.svg)](https://badge.fury.io/js/taralians-language-translator)
+[![Build Status](https://travis-ci.org/kjirou/taralians-language-translator.svg?branch=master)](https://travis-ci.org/kjirou/taralians-language-translator)
+
 A fictional "The Taralians Language"(タラール語) translator
 
 
