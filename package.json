@@ -20,6 +20,14 @@
     "url": "https://github.com/kjirou/taralians-language-translator/issues"
   },
   "homepage": "https://github.com/kjirou/taralians-language-translator#readme",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "cli.js",
+    "index.js",
+    "package.json",
+    "package-lock.json"
+  ],
   "bin": {
     "taralians": "cli.js"
   },
