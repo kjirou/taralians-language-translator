@@ -30,5 +30,5 @@ taralians "What is your name?"
 
 - [アニヲタWiki(仮) タラール語](https://www49.atwiki.jp/aniwotawiki/pages/35560.html)
   - 翻訳ロジックはこちらの記事を参照しました。
-- [ロマンシング サ・ガ](https://ja.wikipedia.org/wiki/%E3%83%AD%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0_%E3%82%B5%E3%83%BB%E3%82%AC) や
+- [ロマンシング サ・ガ](https://ja.wikipedia.org/wiki/%E3%83%AD%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0_%E3%82%B5%E3%83%BB%E3%82%AC)
 - [ロマンシング サガ ミンストレルソング](https://ja.wikipedia.org/wiki/%E3%83%AD%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0_%E3%82%B5%E3%82%AC_-%E3%83%9F%E3%83%B3%E3%82%B9%E3%83%88%E3%83%AC%E3%83%AB%E3%82%BD%E3%83%B3%E3%82%B0-)
