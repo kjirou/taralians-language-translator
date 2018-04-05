@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var translator = require('.');
+var translator = require('..');
 
 if (process.argv.length !== 3) {
   console.log('Usage: taralians <TEXT>');
