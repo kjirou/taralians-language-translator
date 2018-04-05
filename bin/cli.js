@@ -1,11 +1,25 @@
 #!/usr/bin/env node
 
+var parseArgs = require('minimist');
+var parseCommands = require('minimist-subcommand');
+
 var translator = require('..');
 
-if (process.argv.length !== 3) {
-  console.log('Usage: taralians <TEXT>');
-  process.exit();
-}
-var text = process.argv[2];
+var parsedCommandsAndArgv = parseCommands(
+  {
+    default: 'etot',
+    commands: {
+      etot: null,
+      ttoe: null
+    }
+  },
+  process.argv.slice(2)
+);
 
-console.log(translator.taraliansToEnglish.translate(text));
+var subCommand = parsedCommandsAndArgv.commands[0];
+var text = parsedCommandsAndArgv.argv[0] || '';
+
+if (subCommand === 'etot') {
+  console.log(translator.taraliansToEnglish.translate(text));
+} else if (subCommand === 'ttoe') {
+}
