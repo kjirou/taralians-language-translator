@@ -1,9 +1,9 @@
 const assert = require('assert');
 const {describe, it} = require('mocha');
 
-const {translate} = require('..');
+const {translate} = require('../../lib/taralians-to-english');
 
-describe('taralians-language-translator', function() {
+describe('lib/taralians-to-english', function() {
   describe('Verification of historical facts', function() {
     [
       ['What is your name?', 'ムアナ ウト ホオテ ラヘ?'],

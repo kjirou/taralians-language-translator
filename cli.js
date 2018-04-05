@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-const {translate} = require('.');
+const {
+  taraliansToEnglish,
+} = require('.');
 
 if (process.argv.length !== 3) {
   console.log('Usage: taralians <TEXT>');
@@ -8,4 +10,4 @@ if (process.argv.length !== 3) {
 }
 let text = process.argv[2];
 
-console.log(translate(text));
+console.log(taraliansToEnglish.translate(text));
