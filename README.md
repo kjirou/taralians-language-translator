@@ -19,10 +19,32 @@ npm install -g taralians-language-translator
 
 
 ## 使い方
+### 英語(English) to タラール語(Taralians)
 
-```
-taralians "What is your name?"
+```bash
+taralians 'What is your name?'
 ムアナ ウト ホオテ ラヘ?
+```
+
+もしくは、
+
+```bash
+taralians etot 'What is your name?'
+ムアナ ウト ホオテ ラヘ?
+```
+
+### タラール語(Taralians) to 英語(English)
+
+```bash
+taralians ttoe '...ムエ...アメ...カヤキス! カヤキス レビタ!'
+...who...are...black! black demon!
+```
+
+### `'` や `"` で括った文字は固有名詞として翻訳対象から除外される
+
+```bash
+taralians ttoe 'ウ アソ "ナイトハルト" チミタゲ エケ "ローザリア".'
+i am "ナイトハルト" prince of "ローザリア".
 ```
 
 
