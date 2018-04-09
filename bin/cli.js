@@ -22,4 +22,5 @@ var text = parsedCommandsAndArgv.argv[0] || '';
 if (subCommand === 'etot') {
   console.log(translator.englishToTaralians.translate(text));
 } else if (subCommand === 'ttoe') {
+  console.log(translator.taraliansToEnglish.translate(text));
 }

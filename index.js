@@ -6,7 +6,9 @@
  */
 
 const englishToTaralians = require('./lib/english-to-taralians');
+const taraliansToEnglish = require('./lib/taralians-to-english');
 
 module.exports = {
   englishToTaralians,
+  taraliansToEnglish,
 };
