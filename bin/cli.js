@@ -20,6 +20,6 @@ var subCommand = parsedCommandsAndArgv.commands[0];
 var text = parsedCommandsAndArgv.argv[0] || '';
 
 if (subCommand === 'etot') {
-  console.log(translator.taraliansToEnglish.translate(text));
+  console.log(translator.englishToTaralians.translate(text));
 } else if (subCommand === 'ttoe') {
 }
