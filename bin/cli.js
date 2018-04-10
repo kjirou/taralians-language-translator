@@ -1,9 +1,18 @@
 #!/usr/bin/env node
 
+var fs = require('fs');
 var parseArgs = require('minimist');
 var parseCommands = require('minimist-subcommand');
+var path = require('path');
 
-var translator = require('..');
+var translator;
+
+if (fs.existsSync(path.join(__dirname, '../dist/index.js'))) {
+  translator = require('../dist');
+} else {
+  require('babel-register');
+  translator = require('../src');
+}
 
 var parsedCommandsAndArgv = parseCommands(
   {
