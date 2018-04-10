@@ -4,6 +4,8 @@
   "description": "A fictional \"The Taralians Language\"(タラール語) translator",
   "main": "dist/index.js",
   "scripts": {
+    "build": "$(npm bin)/babel ./src --out-dir ./dist",
+    "build-and-publish": "npm run build && npm publish",
     "test": "mocha --require babel-register --recursive"
   },
   "repository": {
@@ -23,8 +25,8 @@
   "files": [
     "LICENSE",
     "README.md",
-    "cli.js",
-    "index.js",
+    "bin",
+    "dist",
     "package.json",
     "package-lock.json"
   ],
