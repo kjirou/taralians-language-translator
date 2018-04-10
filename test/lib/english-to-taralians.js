@@ -1,7 +1,7 @@
 const assert = require('assert');
 const {describe, it} = require('mocha');
 
-const {translate} = require('../../lib/english-to-taralians');
+const {translate} = require('../../src/lib/english-to-taralians');
 
 describe('lib/english-to-taralians', function() {
   describe('Example sentences', function() {
