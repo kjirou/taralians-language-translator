@@ -4,7 +4,7 @@
   "description": "A fictional \"The Taralians Language\"(タラール語) translator",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive"
+    "test": "mocha --require babel-register --recursive"
   },
   "repository": {
     "type": "git",
