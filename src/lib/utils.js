@@ -91,7 +91,7 @@ const lexer = (text) => {
 
   while (restText !== '') {
     let analyzeSuccessed = false;
-    for ({pattern, type} of TOKEN_TYPES) {
+    for (const {pattern, type} of TOKEN_TYPES) {
       const matched = pattern.exec(restText);
       if (matched !== null) {
         restText = restText.replace(pattern, '');
