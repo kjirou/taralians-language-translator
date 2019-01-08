@@ -34,6 +34,8 @@
     "taralians": "bin/cli.js"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
     "mocha": "^5.0.5"
   },
   "dependencies": {
