@@ -37,3 +37,4 @@ testem.*.*.*.json
 
 
 /dist
+/tmp
