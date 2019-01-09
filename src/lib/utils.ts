@@ -1,4 +1,4 @@
-const stringToArray = (string) => {
+export const stringToArray = (string) => {
   return string.match(/[\uD800-\uDBFF][\uDC00-\uDFFF]|[^\uD800-\uDFFF]/g) || [];
 };
 
@@ -45,8 +45,8 @@ const ONE_LETTER_OF_ALPHABET = {
   y: 'ノ',
   z: 'ハ',
 };
-const ONE_LETTER_OF_ALPHABET_E_TO_T = ONE_LETTER_OF_ALPHABET;
-const ONE_LETTER_OF_ALPHABET_T_TO_E = inverseObject(ONE_LETTER_OF_ALPHABET);
+export const ONE_LETTER_OF_ALPHABET_E_TO_T = ONE_LETTER_OF_ALPHABET;
+export const ONE_LETTER_OF_ALPHABET_T_TO_E = inverseObject(ONE_LETTER_OF_ALPHABET);
 
 const TWO_LETTERS_OF_ALPHABET = {
   ce: 'ゲ',
@@ -67,10 +67,10 @@ const TWO_LETTERS_OF_ALPHABET = {
   yo: 'ホ',
   wh: 'ム',
 };
-const TWO_LETTERS_OF_ALPHABET_E_TO_T = TWO_LETTERS_OF_ALPHABET;
-const TWO_LETTERS_OF_ALPHABET_T_TO_E = inverseObject(TWO_LETTERS_OF_ALPHABET);
+export const TWO_LETTERS_OF_ALPHABET_E_TO_T = TWO_LETTERS_OF_ALPHABET;
+export const TWO_LETTERS_OF_ALPHABET_T_TO_E = inverseObject(TWO_LETTERS_OF_ALPHABET);
 
-const TOKEN_TYPES = [
+export const TOKEN_TYPES = [
   {
     type: 'properName',
     pattern: /^('[^']+?'|"[^"]+?")/,
@@ -85,7 +85,7 @@ const TOKEN_TYPES = [
   },
 ];
 
-const lexer = (text) => {
+export const lexer = (text) => {
   const tokens = [];
   let restText = text;
 
@@ -110,14 +110,4 @@ const lexer = (text) => {
   }
 
   return tokens;
-};
-
-module.exports = {
-  ONE_LETTER_OF_ALPHABET_E_TO_T,
-  ONE_LETTER_OF_ALPHABET_T_TO_E,
-  TOKEN_TYPES,
-  TWO_LETTERS_OF_ALPHABET_E_TO_T,
-  TWO_LETTERS_OF_ALPHABET_T_TO_E,
-  lexer,
-  stringToArray,
 };

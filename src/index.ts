@@ -5,10 +5,8 @@
  *   https://www49.atwiki.jp/aniwotawiki/pages/35560.html
  */
 
-const englishToTaralians: any = require('./lib/english-to-taralians');
-const taraliansToEnglish: any = require('./lib/taralians-to-english');
+import {translate as translateEnglishToTaralians_} from './lib/english-to-taralians';
+import {translate as translateTaraliansToEnglish_} from './lib/taralians-to-english';
 
-module.exports = {
-  englishToTaralians,
-  taraliansToEnglish,
-};
+export const translateEnglishToTaralians = translateEnglishToTaralians_;
+export const translateTaraliansToEnglish = translateTaraliansToEnglish_;

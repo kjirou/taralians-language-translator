@@ -1,10 +1,10 @@
-const {
+import {
   ONE_LETTER_OF_ALPHABET_T_TO_E,
   TOKEN_TYPES,
   TWO_LETTERS_OF_ALPHABET_T_TO_E,
   lexer,
   stringToArray,
-} = require('./utils');
+} from './utils';
 
 const translateWord = (word) => {
   const characters = stringToArray(word);
@@ -18,15 +18,11 @@ const translateWord = (word) => {
   return translatedWord;
 };
 
-const translate = (text) => {
+export const translate = (text) => {
   const tokens = lexer(text);
 
   const translatedWords = tokens
     .map(({type, text}) => type === 'word' ? translateWord(text) : text);
 
   return translatedWords.join('');
-};
-
-module.exports = {
-  translate,
 };

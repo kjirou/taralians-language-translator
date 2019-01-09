@@ -1,10 +1,10 @@
-const {
+import {
   ONE_LETTER_OF_ALPHABET_E_TO_T,
   TOKEN_TYPES,
   TWO_LETTERS_OF_ALPHABET_E_TO_T,
   lexer,
   stringToArray,
-} = require('./utils');
+} from './utils';
 
 /**
  * 変換ロジックは以下であるが、これが正しいかは不明。
@@ -35,15 +35,11 @@ const translateWord = (word) => {
   return translatedWord;
 };
 
-const translate = (text) => {
+export const translate = (text) => {
   const tokens = lexer(text);
 
   const translatedWords = tokens
     .map(({type, text}) => type === 'word' ? translateWord(text) : text);
 
   return translatedWords.join('');
-};
-
-module.exports = {
-  translate,
 };
