@@ -4,7 +4,7 @@
   "description": "A fictional \"The Taralians Language\"(タラール語) translator",
   "main": "dist/index.js",
   "scripts": {
-    "build": "$(npm bin)/babel ./src --out-dir ./dist",
+    "build": "$(npm bin)/babel --extensions .ts --out-dir ./dist ./src",
     "build-and-publish": "npm run build && npm publish",
     "test": "$(npm bin)/mocha --require './setup/babel-register.js' --recursive"
   },
