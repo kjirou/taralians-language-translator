@@ -6,8 +6,9 @@
   "scripts": {
     "build": "$(npm bin)/babel --extensions .ts --out-dir ./dist ./src",
     "build-and-publish": "npm run build && npm publish",
+    "declaration": "$(npm bin)/tsc --project ./tsconfigs/declaration.json",
     "test": "$(npm bin)/mocha --require './setup/babel-register.js' --recursive",
-    "typecheck": "$(npm bin)/tsc --project ."
+    "typecheck": "$(npm bin)/tsc --project ./tsconfigs/typecheck.json"
   },
   "repository": {
     "type": "git",
