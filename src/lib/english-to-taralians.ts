@@ -1,17 +1,16 @@
-const {
-  ONE_LETTER_OF_ALPHABET_E_TO_T,
-  TOKEN_TYPES,
-  TWO_LETTERS_OF_ALPHABET_E_TO_T,
+import {
   lexer,
   stringToArray,
-} = require('./utils');
+  translateSingleAlphabet,
+  translateTwoAlphabets,
+} from './utils';
 
 /**
  * 変換ロジックは以下であるが、これが正しいかは不明。
  * 1)2文字アルファベットの置換ができる場所を、先頭から優先して探して置換
  * 2)残ったテキストを1文字アルファベットに置換
  */
-const translateWord = (word) => {
+const translateWord = (word: string) => {
   const characters = stringToArray(word);
   let translatedWord = '';
 
@@ -21,29 +20,25 @@ const translateWord = (word) => {
 
     if (nextChar !== undefined) {
       const twoChars = currentChar + nextChar;
-      const matchedTwoChars = TWO_LETTERS_OF_ALPHABET_E_TO_T[twoChars.toLowerCase()];
-      if (matchedTwoChars !== undefined) {
+      const matchedTwoChars = translateTwoAlphabets(twoChars.toLowerCase());
+      if (matchedTwoChars !== null) {
         translatedWord += matchedTwoChars;
         characterIndex++;
         continue;
       }
     }
 
-    translatedWord += ONE_LETTER_OF_ALPHABET_E_TO_T[currentChar.toLowerCase()] || currentChar;
+    translatedWord += translateSingleAlphabet(currentChar.toLowerCase()) || currentChar;
   }
 
   return translatedWord;
 };
 
-const translate = (text) => {
+export const translate = (text: string) => {
   const tokens = lexer(text);
 
   const translatedWords = tokens
     .map(({type, text}) => type === 'word' ? translateWord(text) : text);
 
   return translatedWords.join('');
-};
-
-module.exports = {
-  translate,
 };
