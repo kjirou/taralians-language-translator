@@ -1,7 +1,7 @@
-const assert = require('assert');
-const {describe, it} = require('mocha');
+import * as assert from 'assert';
+import {describe, it} from 'mocha';
 
-const {translate} = require('../../src/lib/taralians-to-english');
+import {translate} from '../../src/lib/taralians-to-english';
 
 describe('lib/taralians-to-english', function() {
   describe('Example sentences', function() {
