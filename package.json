@@ -6,8 +6,7 @@
   "scripts": {
     "build": "$(npm bin)/tsc --project ./tsconfigs/build.json",
     "build-and-publish": "npm run build && npm publish",
-    "test": "$(npm bin)/mocha --require './setup/ts-node-reigister-for-test.js' --recursive",
-    "typecheck": "$(npm bin)/tsc --project ./tsconfigs/typecheck.json"
+    "test": "$(npm bin)/mocha --require './setup/ts-node-reigister-for-test.js' --recursive"
   },
   "repository": {
     "type": "git",
