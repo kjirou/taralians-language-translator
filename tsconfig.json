@@ -2,7 +2,7 @@
   "compilerOptions": {
     /* Basic Options */
     "jsx": "preserve",
-    "module": "es2015",
+    "module": "commonjs",
     // TODO: Not working?
     "newLine": "LF",
     "noEmit": true,
