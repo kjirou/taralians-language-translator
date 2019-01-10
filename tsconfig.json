@@ -5,6 +5,7 @@
     "module": "es2015",
     // TODO: Not working?
     "newLine": "LF",
+    "noEmit": true,
     "target": "es5",
     /* Strict Type-Checking Options */
     "strict": true,
@@ -15,6 +16,6 @@
     "noUnusedParameters": true
   },
   "include": [
-    "../src"
+    "src"
   ]
 }
