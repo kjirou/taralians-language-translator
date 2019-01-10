@@ -10,7 +10,7 @@ var translator;
 if (fs.existsSync(path.join(__dirname, '../dist/index.js'))) {
   translator = require('../dist');
 } else {
-  require('../setup/babel-register');
+  require('../setup/ts-node-reigister-for-cli-debug');
   translator = require('../src');
 }
 
