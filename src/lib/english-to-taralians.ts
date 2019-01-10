@@ -1,5 +1,4 @@
 import {
-  TOKEN_TYPES,
   lexer,
   stringToArray,
   translateSingleAlphabet,

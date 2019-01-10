@@ -85,7 +85,7 @@ export const translateSingleTaralians: (target: string) => string | null = (targ
   return null;
 };
 
-export const TOKEN_TYPES = [
+const TOKEN_TYPES = [
   {
     type: 'properName',
     pattern: /^('[^']+?'|"[^"]+?")/,
